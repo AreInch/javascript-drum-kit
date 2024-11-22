@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(35,22,167,1) 0%, rgba(50,57,54,1) 0%, rgba(213,122,73,1) 100%);
+    margin: 0;
+}
+
+.drum-kit {
+    display: flex;
+    gap: 50px;
+}
+
+.drum { 
+    height:55px;
+    width: 85px;
+    font-size: 18px; 
+    background-color: rgba(50,57,54,1); 
+    border: 2px solid #ccc; 
+    border-radius: 5px; cursor: pointer; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: 0.2s; 
+    color: rgba(213,122,73,1);
+}
+
+.drum:hover { 
+    background-color: rgba(213,122,73,1); 
+    color: rgba(50,57,54,1)
+}
+
+.drum:active { 
+    transform: scale(0.8); 
+}
+
+.shrink {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 1180px) {
+    .drum-kit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
